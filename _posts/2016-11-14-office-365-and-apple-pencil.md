@@ -2,7 +2,7 @@
 layout: post
 title: Office 365 and Apple Pencil
 ---
-![OneNote and Powerpoint in split screen multitasking](/images/2016/11/14/onenote-and-powerpoint-in-split-screen.jpg)
+![OneNote and Powerpoint in split screen multitasking]({{ site.baseurl }}/images/2016/11/14/onenote-and-powerpoint-in-split-screen.jpg)
 
 My name is Peter Davison-Reiber, and I'm a Mathematics Teacher at a high school near London, England. I've always been a bit of a tech nerd, and since starting to work as a teacher around four years ago, I've been interested in learning about the ways technology can be used in education. I also like writing and sharing my ideas with other teachers, and I get a huge kick out of helping other teachers to become more productive and enjoy their work more as a result.
 
