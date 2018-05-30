@@ -5,8 +5,14 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
       
-      <h1>{{ post.date | date: "%Y"}}</h1>
+      {% unless post.date | "%Y" == post.previous.date | "%Y" %}
+            <h1>{{ post.date | date: "%Y"}}</h1>
+      {% endif %}
+      
+      {% unless post.date | "%B" == post.previous.date | "%B" %}
       <h2>{{ post.date | date: "%B"}}</h2>
+      {% endif %}
+      
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 
   {% endfor %}
