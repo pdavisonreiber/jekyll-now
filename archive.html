@@ -6,19 +6,19 @@ layout: default
   {% for post in site.posts %}
       
       {% capture current_post_year %}
-            {{ post.date | "%Y" }}
+            {{ post.date | date: "%Y" }}
       {% endcapture %}
       
       {% capture previous_post_year %}
-            {{ post.previous.date | "%Y" }}
+            {{ post.previous.date | date: "%Y" }}
       {% endcapture %}
       
       {% capture current_post_month %}
-            {{ post.date | "%B" }}
+            {{ post.date | date: "%B" }}
       {% endcapture %}
       
       {% capture previous_post_month %}
-            {{ post.previous.date | "%B" }}
+            {{ post.previous.date | date: "%B" }}
       {% endcapture %}
       
       {% unless current_post_year == previous_post_year %}
