@@ -7,11 +7,11 @@ layout: default
       
       {% unless post.date | "%Y" == post.previous.date | "%Y" %}
             <h1>{{ post.date | date: "%Y"}}</h1>
-      {% endif %}
+      {% endunless %}
       
       {% unless post.date | "%B" == post.previous.date | "%B" %}
       <h2>{{ post.date | date: "%B"}}</h2>
-      {% endif %}
+      {% endunless %}
       
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 
