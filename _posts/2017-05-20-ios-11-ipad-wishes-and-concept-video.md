@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iOS 11: iPad Wishes and Concept Video
+title: iOS 11 – iPad Wishes and Concept Video
 categories: [linked]
 tags: [iOS 11]
 ---
