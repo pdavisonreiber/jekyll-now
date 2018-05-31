@@ -3,6 +3,7 @@ layout: post
 title: iOS 11 – iPad Wishes and Concept Video
 categories: [linked]
 tags: [iOS 11]
+
 ---
 
 A really fantastic [concept video](https://youtu.be/UyFUDQ5LLZw) from Federico Viticci of [MacStories](https://www.macstories.net/) on his vision for iOS 11.
@@ -17,12 +18,12 @@ Viticci's ideas for a redesigned Split View app picker (much overdue) are also g
 
 > The Split View app picker has to be redesigned from scratch. Building on last year's concept, I envision a picker that would address all the shortcomings of the existing design:
 > 
->  • The picker would allow users to arrange their most-used apps on a grid, similar to a mini Home screen;
->  • There would be an integrated Spotlight option to search for specific apps (or app content) and launch them directly in Split View;
->  • The picker could be displayed on either side of Split View, with an option to swap the primary and secondary app (a long-press on the picker "handle" at the top); 
->  • Recently used apps would still be displayed at the bottom of the picker as cards. Unlike iOS 10, every app – not just the most recently used one – would carry a preview of its last-seen state (like in the system multitasking view);
->  • Every app icon/card displayed in the picker would support spring-loading for items passed via drag & drop, enabling users to quickly open files in different apps or insert discrete data into app views;
->  • The entire Split View picker UI could be invoked and navigated with an external keyboard, removing the need to touch the screen when an iPad is used on a desk.
+>  - The picker would allow users to arrange their most-used apps on a grid, similar to a mini Home screen;
+>  - There would be an integrated Spotlight option to search for specific apps (or app content) and launch them directly in Split View;
+>  - The picker could be displayed on either side of Split View, with an option to swap the primary and secondary app (a long-press on the picker "handle" at the top); 
+>  - Recently used apps would still be displayed at the bottom of the picker as cards. Unlike iOS 10, every app – not just the most recently used one – would carry a preview of its last-seen state (like in the system multitasking view);
+>  - Every app icon/card displayed in the picker would support spring-loading for items passed via drag & drop, enabling users to quickly open files in different apps or insert discrete data into app views;
+>  - The entire Split View picker UI could be invoked and navigated with an external keyboard, removing the need to touch the screen when an iPad is used on a desk.
 > 
 > A revamped app picker design based on these principles would greatly increase the usability and speed of Split View, but it would also introduce a different set of trade-offs and usability concerns to be addressed by Apple. Specifically, while the picker could be invoked on either side of the screen, it couldn't be shown simultaneously on both sides, as it would cause issues with users attempting to open the same app in two places. Furthermore, I imagine that Apple could dim an app's icon in the Split View grid if the app is already active on the other side.
 
