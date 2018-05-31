@@ -2,14 +2,14 @@
 layout: default
 ---
 
-<div class="page">
+<div class="posts">
 {% for post in site.posts %}
 
 	{% if post.previous == nil %}
 	
 		<h1>{{ post.date | date: "%Y"}}</h1>
 		<h2>{{ post.date | date: "%B"}}</h2>
-		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+		<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
 		
 	{% else %}
 		
