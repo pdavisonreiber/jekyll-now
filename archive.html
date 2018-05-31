@@ -21,7 +21,7 @@ layout: default
             {{ post.previous.date | date: "%B" }}
       {% endcapture %}
       
-      {% if current_post_year != previous_post_year or %}
+      {% if current_post_year != previous_post_year %}
             <h1>{{ post.date | date: "%Y"}}</h1>
       {% endif %}
       
