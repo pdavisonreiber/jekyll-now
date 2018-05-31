@@ -14,7 +14,7 @@ title: Archive
 
 	{% assign next_post_month = post.next.date | date: "%B" %}
 	
-	{% if !post.next %}
+	{% if post.next == nil %}
 		<h1>{{ current_post_year }}</h1>
 		<h2>{{ current_post_month }}</h2>	
 	{% elsif next_post_year != current_post_year %}
