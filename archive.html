@@ -17,14 +17,14 @@ title: Archive
 	{% if !post.next %}
 		<h1>{{ current_post_year }}</h1>
 		<h2>{{ current_post_month }}</h2>
-	{% elsif next_post_year != current_post_year %}
-		<h1>{{ current_post_year }}</h1>
-		<h2>{{ current_post_month }}</h2>
-	{% elsif next_post_month != current_post_month %}
-		<h2>{{ current_post_month }}</h2>
-	{% else %}	
+	{% else %} 
+		{% if next_post_year != current_post_year %}
+			<h1>{{ current_post_year }}</h1>
+			<h2>{{ current_post_month }}</h2>
+		{% elsif next_post_month != current_post_month %}
+			<h2>{{ current_post_month }}</h2>
+		{% endif %}
 	{% endif %}
-
 	
 	<p>{{current_post_year}}</p>
 	<p>{{next_post_year}}</p>
