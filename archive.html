@@ -4,6 +4,12 @@ title: Archive
 ---
 
 <div class="posts">
+
+{% capture dictionary %}
+{{ site.posts | group_by_exp:"post","post.date | date: "Y""}}
+{%end capture}
+
+<div class="posts">
 {% for post in site.posts %}
 		
 	{% capture current_post_year %}
