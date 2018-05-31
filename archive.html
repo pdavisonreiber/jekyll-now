@@ -14,11 +14,10 @@ title: Archive
 
 	{% assign previous_post_month = post.next.date | date: "%B" }
 	
-	{% unless previous_post_year == current_post_year %}
+	{% if previous_post_year != current_post_year %}
 		<h1>{{ current_post_year }}</h1>
-	{% endunless %}
-	
-	{% if previous_post_month != current_post_month or previous_post_year != current_post_year %}
+		<h2>{{ current_post_month }}</h2>
+	{% elseif previous_post_month != current_post_month %}
 		<h2>{{ current_post_month }}</h2>
 	{% endif %}
 
