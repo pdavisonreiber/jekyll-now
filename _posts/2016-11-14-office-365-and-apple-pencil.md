@@ -25,7 +25,6 @@ In practice, I hardly use my school network drive, and instead keep all of my fi
 # Office Apps for Lesson Planning
 
 ![OneNote for lesson planning]({{ site.baseurl }}/images{{ page.url }}/onenote-for-lesson-planning.png)
-> {{ imagedir }}onenote-for-lesson-planning.png
 
 The Office apps for iPad are really powerful and full-featured, and feel particularly great to use on an iPad Pro. For a far better overview of what they are capable of than I could ever manage, I'd recommend a listen to a recent episode of [Canvas](https://overcast.fm/+F1iINwGYU). However, I'd like to mention in particular some of the ways I use them in lesson planning. 
 
