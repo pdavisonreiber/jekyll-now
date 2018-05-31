@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Marking with Copied
+tags: [Copied]
 ---
 ![App Artwork for Copied – Copy and Paste Everywhere by Kevin Chang (https://itunes.apple.com/gb/app/copied-copy-paste-everywhere/id1015767349?mt=8&uo=4)]({{ site.baseurl }}/images{{ page.url }}/copied-icon.jpg)
 
