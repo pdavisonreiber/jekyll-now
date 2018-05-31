@@ -14,7 +14,7 @@ Since then, I’ve been working on developing my knowledge of the object-oriente
 
 I may write more in the near future about this learning process, and about the apps and resources I have been using, but the result is a brand new version 2.0 of my Things Parser, completely rewritten using JavaScript classes and adding several significant new features. Before I get onto those, let me just summarise the basic syntax, which I’ve changed slightly from the previous version.
 
-* \\#Project Name
+* \#Project Name
 * ==Heading
 * @Tag Name 
 * //Note

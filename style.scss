@@ -192,12 +192,12 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $black;
   cursor: pointer;
   font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 32px;
+  /*letter-spacing: 1px;*/
 }
 
 .site-description {
@@ -257,8 +257,6 @@ nav {
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 22px;
-    font-style: italic;
   }
 
   .comments {

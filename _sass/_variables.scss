@@ -15,8 +15,12 @@ $lightGray: #eee;
 $white: #fff;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$helvetica: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+"Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+"Droid Sans", "Helvetica Neue", sans-serif;
+$helveticaNeue: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+"Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+"Droid Sans", "Helvetica Neue", sans-serif;
 $georgia: Georgia, serif;
 
 // Mobile breakpoints
