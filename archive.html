@@ -11,7 +11,7 @@ title: Archive
 	{% endcapture %}
 
 	{% capture previous_post_year %}
-	{{ post.previous.date | date: "%Y" }}
+	{{ post.next.date | date: "%Y" }}
 	{% endcapture %}
 
 	{% capture current_post_month %}
@@ -19,7 +19,7 @@ title: Archive
 	{% endcapture %}
 
 	{% capture previous_post_month %}
-	{{ post.previous.date | date: "%B" }}
+	{{ post.next.date | date: "%B" }}
 	{% endcapture %}
 	
 	{% unless previous_post_year == current_post_year %}
