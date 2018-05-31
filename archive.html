@@ -21,13 +21,13 @@ layout: default
             {{ post.previous.date | date: "%B" }}
       {% endcapture %}
       
-      {% unless current_post_year == previous_post_year %}
+      {% if current_post_year != previous_post_year or %}
             <h1>{{ post.date | date: "%Y"}}</h1>
-      {% endunless %}
+      {% endif %}
       
-      {% unless current_post_month == previous_post_month %}
+      {% if current_post_month != previous_post_month %}
       <h2>{{ post.date | date: "%B"}}</h2>
-      {% endunless %}
+      {% endif %}
       
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 
