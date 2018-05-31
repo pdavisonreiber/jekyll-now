@@ -22,11 +22,11 @@ layout: default
 	{% endcapture %}
 	
 	{% if previous_post_year != current_post_year %}
-	<h1>{% current_post_year %}</h1>
+	<h1>{{ current_post_year }}</h1>
 	{% endif %}
 	
 	{% if previous_post_month != current_post_month %}
-	<h2>{% current_post_month %}</h2>
+	<h2>{{ current_post_month }}</h2>
 	{% endif %}
 	
 	<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
