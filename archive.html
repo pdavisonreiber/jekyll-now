@@ -18,9 +18,10 @@ title: Archive
 		<h1>{{ current_post_year }}</h1>
 	{% endunless %}
 	
-	{% unless previous_post_month == current_post_month and previous_post_year == current_post_year %}
+	{% if previous_post_month != current_post_month or previous_post_year != current_post_year %}
 		<h2>{{ current_post_month }}</h2>
-	{% endunless %}
+	{% endif %}
+
 	
 	<p>{{current_post_year}}</p>
 	<p>{{previous_post_year}}</p>
