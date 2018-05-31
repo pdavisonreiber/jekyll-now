@@ -4,17 +4,9 @@ title: Archive
 ---
 
 <div class="posts">
-
-{% capture dictionary %}
-{{ site.posts | group_by_exp:"post","post.date | date: "Y""}}
-{% endcapture %}
-
-<div class="posts">
 {% for post in site.posts %}
 		
-	{% capture current_post_year %}
-	{{ post.date | date: "%Y" }}		
-	{% endcapture %}
+	{% assign current_post_year = "{{ post.date | date: "%Y" }}" %}
 
 	{% capture previous_post_year %}
 	{{ post.next.date | date: "%Y" }}
