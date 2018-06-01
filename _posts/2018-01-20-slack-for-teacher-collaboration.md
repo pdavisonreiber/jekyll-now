@@ -2,6 +2,7 @@
 layout: post
 title: Slack for Teacher Collaboration
 tags: [Email, Slack]
+redirect_from: "/2018/01/20/slack-for-teacher-collaboration/"
 ---
 
 [Slack](https://slack.com/) is a tool for teams that aims to simplify communication and collaboration. It’s marketed as a solution to many of the problems inherent in email, and as any teacher knows, school email is a problem very much in need of a solution!

@@ -2,6 +2,7 @@
 layout: post
 title:
 tags: [GoodNotes, Mirroring 360]
+redirect_from: "/2017/03/02/delivering-lessons-with-goodnotes-and-mirroring-360/"
 ---
 
 For a long time I thought about my iPad Pro exclusively as a personal productivity device. I would research and plan my lessons there, I would design my lesson materials there, but after I'd saved everything into OneDrive, it would be the Windows PC connected to my smart board that I'd use to actually display these to my students. Because I was creating my lesson materials in PowerPoint, with my lesson plans in OneNote, this workflow made a lot of sense: one app for my students on the smart board, another app for me on my iPad. 

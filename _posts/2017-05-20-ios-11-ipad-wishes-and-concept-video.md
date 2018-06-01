@@ -4,6 +4,7 @@ title: iOS 11 – iPad Wishes and Concept Video
 titlelink: https://www.macstories.net/stories/ios-11-ipad-wishes-and-concept-video/
 categories: [linked]
 tags: [iOS 11]
+redirect_from: "/2017/05/20/ios-11-ipad-wishes-and-concept-video/"
 
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: Apple Updates Pages with LaTeX Support
 tags: [LaTeX, Pages]
+redirect_from: "/2017/03/30/apple-updates-pages-with-latex-support/"
 ---
 
 ![LaTeX on Pages]({{ site.baseurl }}/images{{ page.url }}/latex-on-pages.png)

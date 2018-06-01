@@ -2,6 +2,7 @@
 layout: post
 title: Office 365 and Apple Pencil
 tags: [Apple Pencil, iPad Pro, Office 365]
+redirect_from: "/2016/11/14/office-365-and-apple-pencil/"
 ---
 ![OneNote and Powerpoint in split screen multitasking]({{ site.baseurl }}/images{{ page.url }}/onenote-and-powerpoint-in-split-screen.png)
 

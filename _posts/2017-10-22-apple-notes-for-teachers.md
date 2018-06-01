@@ -2,6 +2,7 @@
 layout: post
 title: Apple Notes for Teachers
 tags: [iOS 11, Notes]
+redirect_from: "/2017/10/22/apple-notes-for-teachers/"
 ---
 
 This summer, for the first time, I decided to take the plunge and install the iOS 11 beta. In previous years, I had heeded the warnings not to install a beta operating system on your main work device, but this year the temptation was just too great. For the iPad (much more than the iPhone), this was a huge release, with several headline new features that I couldn’t wait to try. My 12.9” iPad Pro is my main work device, but I figured it was the summer holidays, and if I had any major problems I could probably (🤞🏻) fix them before September.

@@ -2,6 +2,7 @@
 layout: post
 title: Things Parser 2.0 for Drafts 5
 tags: [Agile Tortoise, Drafts, JavaScript, Things]
+redirect_from: "/2018/04/18/things-parser-20-for-drafts-5/"
 ---
 
 Today is release day for the wonderful [Drafts 5](https://itunes.apple.com/gb/app/drafts-5-capture-act/id1236254471?mt=8&uo=4&at=1001lsF2). There are a few great reviews out there, not least [Tim Nahumck](https://www.twitter.com/nahumck), who’s published an [amazingly comprehensive review](https://www.macstories.net/reviews/drafts-5-the-macstories-review/) over at MacStories. Also worth checking out [Rosemary Orchard](https://mobile.twitter.com/rosemaryorchard)’s review over on [her blog](https://www.rosemaryorchard.com/blog/drafts-5-review).

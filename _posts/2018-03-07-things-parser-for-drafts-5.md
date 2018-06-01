@@ -2,6 +2,7 @@
 layout: post
 title: Things Parser for Drafts 5
 tags: [Agile Tortoise, Drafts, JavaScript, Things]
+redirect_from: "/2018/03/07/things-parser-for-drafts-5/"
 ---
 
 **UPDATE:** _I’ve just released a version 2.0 of my Drafts Parser with new block-based entry and project creation features. You can read more about the update here._

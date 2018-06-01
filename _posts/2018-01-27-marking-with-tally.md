@@ -2,6 +2,7 @@
 layout: post
 title: Marking with Tally
 tags: [Agile Tortoise, Drafts, Tally]
+redirect_from: "/2018/01/27/marking-with-tally/"
 ---
 
 ![Life, the Universe, and Everything]({{ site.baseurl }}/images{{ page.url }}/life-the-universe-and-everything.jpeg)
