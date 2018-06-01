@@ -5,7 +5,7 @@ tags: [Agile Tortoise, Drafts, JavaScript, Things]
 redirect_from: "/2018/03/07/things-parser-for-drafts-5/"
 ---
 
-**UPDATE:** _I’ve just released a version 2.0 of my Drafts Parser with new block-based entry and project creation features. You can read more about the update [here]({{ site.baseurl }}{% link _posts/2018-04-18-things-parser-two-point-o-for-drafts-5 %})._
+**UPDATE:** _I’ve just released a version 2.0 of my Drafts Parser with new block-based entry and project creation features. You can read more about the update [here]({{ site.baseurl }}{% link _posts/2018-04-18-things-parser-two-point-o-for-drafts-5.md %})._
 
 I've had a lot of fun lately playing around with the beta of [Drafts 5](https://agiletortoise.github.io/drafts-documentation/). The developer [Greg Pierce](https://www.twitter.com/agiletortoise) of [Agile Tortoise](http://agiletortoise.com/) has been hard at work on a number of new features, notably developing and expanding the possibilities for [JavaScript automation](https://agiletortoise.github.io/drafts-documentation/scripting/) within the app. If you can pick up some JavaScript, there are some very powerful new things you can now do. 
 
