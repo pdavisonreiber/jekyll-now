@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <article class="post">
     
       {% if post.titlelink %}
@@ -32,3 +32,20 @@ layout: default
 
   {% endfor %}
 </div>
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+<span class="floatleft">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="alignleft">↤ Newer Posts</a>
+    {% endif %}
+</span>
+<span class="floatright">
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="alignright">Older Posts ↦</a>
+    {% endif %}
+</span>
+{% endif %}
+</div>
+
+
