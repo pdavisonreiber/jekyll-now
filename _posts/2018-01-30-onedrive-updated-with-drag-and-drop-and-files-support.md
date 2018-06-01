@@ -1,10 +1,13 @@
 ---
 layout: post
 title: OneDrive Updated with Drag & Drop and Files Support
+categories: linked
+titlelink: https://www.macstories.net/news/onedrive-for-ios-updated-with-drag-and-drop-on-ipad-a-new-design-and-more/
 tags: [Drag and Drop, iOS 11, Office 365, OneDrive]
+
 ---
 
-[John Voorhees, writing for MacStories:](https://www.macstories.net/news/onedrive-for-ios-updated-with-drag-and-drop-on-ipad-a-new-design-and-more/)
+John Voorhees, writing for MacStories:
 
 > Microsoft has released version 10.1 of its OneDrive app with support for drag and drop on the iPad and a new, cleaner design.
 > 

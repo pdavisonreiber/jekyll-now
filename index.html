@@ -5,12 +5,30 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+    
+      {% if post.titlelink %}
+      <a href="{{ post.titlelink }}"><h1 class="entry-title">↪︎ {{ post.title }}</h1></a>
+      {% else %}
+      <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      {% endif %}
+      
+      <span class="meta">{{ post.date | date: "%Y-%m-%d" }}</span><a href="{{ site.baseurl }}{{ post.url }}"><span class="meta"><span class="meta">✪Permalink</span></a>
+      
       <div class="entry">
         {{ post.content }}
       </div>
+      
+      <div class="meta">
+          {% for tag in post.tags %}
+            {% if forloop.last %}
+                <a href="{{ site.baseurl }}/tags#{{ tag }}" class="meta">{{ tag }}</a>
+            {% else %}
+                <a href="{{ site.baseurl }}/tags#{{ tag }}" class="meta">{{ tag }}</a>,
+            {% endif %}
+          {% endfor %}
+      </div>
+    
+    </article>
 
   {% endfor %}
 </div>

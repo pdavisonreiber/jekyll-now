@@ -14,7 +14,7 @@ When it turned out that, in my new school, the only IT I would have for my own u
 After purchasing my iPad Pro, I was very excited when I heard from the IT department that they had purchased an [Office 365 for Education](https://www.microsoft.com/en-gb/education/products/office/default.aspx) subscription for all staff and students. This meant I could have the full suite of Office apps on my iPad Pro along with 1TB of OneDrive storage. 
 
 
-# OneDrive
+## OneDrive
 
 Even though we are storing more and more of our data in the cloud, it's my experience that a lot of schools still run their file sharing systems using their own servers. On a Windows PC, this is usually a seamless and native experience. Files are stored in a number of drives in the which can be accessed from "My Computer". These drives usually include a home drive for the individual user to store their files, and several shared drives for departmental and school wide use. Logging onto any PC with your username and password allows you access to all of these drives, but getting at them from elsewhere is usually more difficult. Some schools have some sort of web service which allows remote access, but in my experience these are universally awful, particularly if you want to use them on a Mac, or – dare I say it – an iPad. 
 
@@ -23,7 +23,7 @@ OneDrive unfortunately is not integrated with these shared drives in any way. Wh
 In practice, I hardly use my school network drive, and instead keep all of my files in my OneDrive folder. The 1TB of storage has been amazingly useful, and I have been able to consolidate all of the resources I have picked up from the various schools I've worked at into one place. Any school documents or spreadsheets I need to refer to, I can also just copy there, and with the folder upload that's available when using Chrome on a PC, you can do this in bulk quite easily. Obviously I can't use this for any shared documents on the school network where I need to collaborate with others, but the only times I have to do this are very particular circumstances such as entering grades from a test. 
 
 
-# Office Apps for Lesson Planning
+## Office Apps for Lesson Planning
 
 ![OneNote for lesson planning]({{ site.baseurl }}/images{{ page.url }}/onenote-for-lesson-planning.png)
 
@@ -38,7 +38,7 @@ Despite having never used it before, I was somewhat surprised to find that OneNo
 One of the most useful of these is being able to attach files anywhere within a page. Files can be added from any of the usual document providers, including OneDrive. With this tool I can attach all of the worksheets and PowerPoints directly to my lesson plan. You can even preview them there without leaving the app. The only disadvantage is that once a file is attached, it effectively becomes a copy of the file within the note. You can edit the attached file in PowerPoint, but these changes will not be synced with any changes to the original file in OneDrive. An alternative is to paste a OneDrive link into your note, but this has the annoying feature of opening your file in a browser rather than the relevant app. Microsoft may need to do some work on universal link recognition to fix this. 
 
 
-# Apple Pencil
+## Apple Pencil
 
 At my last school, where they had only just been introduced, most teachers found it difficult to see the potential of iPads for their work or their teaching, but this is an issue that I think affects all such deployments. I've learnt a lot about the importance of effectively conveying to teachers what an actual lesson involving iPads *looks like* from Fraser Spiers and Bradley Chambers in their excellent podcast [Out of School](https://outofschool.net/). (If you want to know more about what a good iPad deployment looks like, I highly recommend their [Deployment 2016](https://overcast.fm/+zV6cWzu4) series.) 
 
@@ -51,6 +51,6 @@ All of the Office apps have a draw menu, where you can control the colour and th
 The only frustrating thing about drawing mode is that you are very much drawing *on top* of the document: you are not creating an inline image. Most of the time this is a good thing since you don't have to worry about text wrapping, but when you go back and edit some text in a OneNote page, all of the equations you wrote can suddenly be misaligned with your text. 
 
 
-# Conclusion
+## Conclusion
 
 The Office apps, along with the Apple Pencil, have quickly become the main tool I use for planning and teaching my maths lessons. The Apple Pencil has been a revelation to me, and for the first time I have felt completely at home doing mathematics on an iPad. For any school where students use iPads, it's makes a compelling case to go for the Pro. For any teacher working on iOS with equations or pictures or diagrams, it really is a must-have tool and makes doing this kind of work on an iPad Pro feel incredibly natural. 

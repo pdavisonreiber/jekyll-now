@@ -18,7 +18,7 @@ First of all, it removes the need for the double backslash before the date and t
 
 In addition, I wanted my script to support all of the features that the Things `add-json` command supports, so as well as the special markup characters for projects, headings, tags, and notes, I’ve added characters for deadlines and checklist items. The full syntax is as follows:
 
-* \\#Project Name
+* \#Project Name
 * ==Heading
 * @Tag Name
 * ++Note

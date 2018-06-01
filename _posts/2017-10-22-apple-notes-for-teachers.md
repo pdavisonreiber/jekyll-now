@@ -60,8 +60,6 @@ Note the use of emoji in these and other folder names. This helps me to easily d
 
 Shared notes, first introduced in iOS 10, has become a really useful and reliable feature. In this folder I keep a bunch of notes shared with others, mostly my wife. We still use Google Drive to share some files, but again, having documents in context along with some additional notes is much more useful than a complicated nested folder structure. 
 
----- 
-
 ## Notes for Teachers
 
 Teachers have a lot of information to deal with and keep track of, and it comes in many forms: emails, attachments, paper documents, conversations with colleagues and students. Having a simple, reliable way to collect these things together and keep them organised and accessible is important. Notes achieves this admirably. It’s solid and unfussy, and feels like the default choice in the best of ways. 

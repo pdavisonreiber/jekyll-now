@@ -1,0 +1,14 @@
+---
+layout: page
+title: Tags
+---
+
+{% assign all_tags = site.posts | map: "tags" | uniq | sort_natural %}
+<div class="posts">
+{% for tag in all_tags %}
+    <h2 id="{{ tag }}">{{ tag }}</h2>
+    {% for post in site.tags[tag] %}
+        <p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
+    {% endfor %}
+{% endfor %}
+</div>
