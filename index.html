@@ -12,7 +12,7 @@ layout: default
       <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
       {% endif %}
       
-      <span class="meta">{{ post.date | date: "%Y-%m-%d" }}</span><a href="{{ site.baseurl }}{{ post.url }}"><span class="meta"><span class="meta">✪Permalink</span></a>
+      <a href="{{ site.baseurl }}/archive#{{ post.date | date: "%Y-%m" }}"><span class="meta">{{ post.date | date: "%Y-%m-%d" }}</span></a><a href="{{ site.baseurl }}{{ post.url }}"><span class="meta"><span class="meta">✪Permalink</span></a>
       
       <div class="entry">
         {{ post.content }}

@@ -6,22 +6,24 @@ title: Archive
 <div class="posts">
 {% for post in site.posts %}
 		
-	{% assign current_post_year = post.date | date:"%Y" %}
+	{% assign current_post_year = post.date | date: "%Y" %}
 
 	{% assign next_post_year = post.next.date | date: "%Y" %}
 	
 	{% assign current_post_month = post.date | date: "%B" %}
 
 	{% assign next_post_month = post.next.date | date: "%B" %}
+    
+    {% assign date_id = post.date | date: "%Y-%m" %}
 	
 	{% if post.next == nil %}
 		<h1>{{ current_post_year }}</h1>
-		<h2>{{ current_post_month }}</h2>	
+        <h2 id="{{ date_id }}">{{ current_post_month }}</h2>
 	{% elsif next_post_year != current_post_year %}
 		<h1>{{ current_post_year }}</h1>
-		<h2>{{ current_post_month }}</h2>
+		<h2 id="{{ date_id }}">{{ current_post_month }}</h2>
 	{% elsif next_post_month != current_post_month %}
-		<h2>{{ current_post_month }}</h2>	
+		<h2 id="{{ date_id }}">{{ current_post_month }}</h2>
 	{% endif %}
 
 	<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
