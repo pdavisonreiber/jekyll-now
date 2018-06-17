@@ -47,6 +47,7 @@ Because I was running my Jekyll blog on GitHub Pages, I was somewhat constrained
 ### Archive Page
 With the Archive page, what I wanted was a list of year and month headings, most recent at the top, with links to each of the posts under their respective headings. I did’t want to include months were there weren’t any posts, and I didn’t want to repeat months with more than one post. Here’s the code I used:
 
+{% raw %}
 ~~~ html
 {% for post in site.posts %}
 		
@@ -61,48 +62,53 @@ With the Archive page, what I wanted was a list of year and month headings, most
    {% assign date_id = post.date | date: "%Y-%m" %}
 	
 	{% if post.next == nil %}
-		<h1>%20current_post_year%20</h1>
-   	<h2 id="%20date_id%20">%20current_post_month%20</h2>
+		<h1>{{ current_post_year }}</h1>
+   	<h2 id="{{ date_id }}">{{ current_post_month }}</h2>
 	{% elsif next_post_year != current_post_year %}
-		<h1>%20current_post_year%20</h1>
-		<h2 id="%20date_id%20">%20current_post_month%20</h2>
+		<h1>{{ current_post_year }}</h1>
+		<h2 id="{{ date_id }}">{{ current_post_month }}</h2>
 	{% elsif next_post_month != current_post_month %}
-		<h2 id="%20date_id%20">%20current_post_month%20</h2>
+		<h2 id="{{ date_id }}">{{ current_post_month }}</h2>
 	{% endif %}
 
-	<p><a href="%20site.baseurl%20%20post.url%20">%20post.title%20</a></p>
+	<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
 		
 {% endfor %}
 ~~~
+{% endraw %}
 
-Basically, I print the post’s year and month, unless they are the same as the next post chronologically (which is further up the page). I also added `id` attributes to the months to act as HTML anchors. Then I made the date stamp on each post a link to `%20site.baseurl%20/archive#%20page.date%20%7C%20date%3A%20%22%25Y-%25m%22%20`, so that the user can click on the date stamp and be taken straight to the right section of the Archive page. You can try it by clicking the date stamp at the top of this post or by [clicking here][24].
+Basically, I print the post’s year and month, unless they are the same as the next post chronologically (which is further up the page). I also added `id` attributes to the months to act as HTML anchors. Then I made the date stamp on each post a link to `{{ site.baseurl }}/archive#{{ page.date | date: "%Y-%m" }}`, so that the user can click on the date stamp and be taken straight to the right section of the Archive page. You can try it by clicking the date stamp at the top of this post or by [clicking here][24].
 
 ### Tags Page
 I used a similar trick with my [Tags page][25], which collates all the different tags I have assigned to posts. It’s built using the following code:
 
+{% raw %}
 ~~~ html
 {% assign all_tags = site.posts | map: "tags" | uniq | sort_natural %}
 <div class="posts">
 {% for tag in all_tags %}
-    <h2 id="%20tag%20">%20tag%20</h2>
+    <h2 id="{{ tag }}">{{ tag }}</h2>
     {% for post in site.tags[tag] %}
-        <p><a href="%20site.baseurl%20%20post.url%20">%20post.title%20</a></p>
+        <p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
     {% endfor %}
 {% endfor %}
 </div>
 ~~~
+{% endraw %}
 
 The first line really shows the power of Liquid as a functional language: it fetches all the posts, gets a list of their tags, removes duplicates, and sorts them into alphabetical order. Then I just loop over the tags, printing each heading – again with an `id` attribute – along with links to all of the pages that have that tag. At the end of each post, I then have the following code:
 
+{% raw %}
 ~~~ html
 {% for tag in page.tags %}
 	{% if forloop.last %}
-		<a href="%20site.baseurl%20/tags#%20tag%20" class="meta">%20tag%20</a>
+		<a href="{{ site.baseurl }}/tags#{{ tag }}" class="meta">{{ tag }}</a>
 	{% else %}
-		<a href="%20site.baseurl%20/tags#%20tag%20" class="meta">%20tag%20</a>,
+		<a href="{{ site.baseurl }}/tags#{{ tag }}" class="meta">{{ tag }}</a>,
 	{% endif %}
 {% endfor %}
 ~~~
+{% endraw %}
 
 This lists the tags on the post (the last without a comma) and links them to the appropriate anchor on the Tags page. [Here’s an example][26] of a link to the tag for Notes on my Tags page.
 
@@ -111,31 +117,36 @@ Compared to the plugins which can do things like generate individual pages for e
 ### Link Posts
 I wanted my site to natively support link posts. I added a custom field to my post front matter called `titlelink:`, and then used the following code to turn the title into a link and add a visual indicator when there was text in this field:
 
+{% raw %}
 ~~~ html
 {% if page.titlelink %}
-	<a href="%20page.titlelink%20"><h1 class="entry-title">%20page.title%20 ↪︎</h1></a>
+	<a href="{{ page.titlelink }}"><h1 class="entry-title">{{ page.title }} ↪︎</h1></a>
 {% else %}
-  <h1 class="entry-title">%20page.title%20</h1>
+  <h1 class="entry-title">{{ page.title }}</h1>
 {% endif %}
 ~~~
+{% endraw %}
 
 ### Popover Footnotes
 Jekyll supports footnotes out of the box, but I wanted to implement inline, popover style footnotes like this one. There’s a JavaScript plugin called [Bigfoot][27] that can do this, so I created a `js` directory in my repository and put the `bigfoot.min.js` file in there. It wasn’t initially clear to me, but it turned out that I also had to have jQuery in there as well for it to work. I then put the following code into the `default.hmtl` template in my `_layouts` directory:
 
+{% raw %}
 ~~~ html
-<script type="text/javascript" src="%20site.baseurl%20/js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="%20site.baseurl%20/js/bigfoot.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/bigfoot.min.js"></script>
     <script type="text/javascript">
       $.bigfoot();
     </script>
 ~~~
+{% endraw %}
 
 ### Images Directory
 I configured my posts’ permalinks to be of the form `https://polymaths.blog[/linked]/yyyy/mm/slugified-title`, and so to make it easy to reference images inside a post, I set up the directory structure within my images folder to match this. FN So for example, if the URL of the post ends with `/2018/06/post-title` then the path of an image for that post would be `/images/2018/06/post-title/image-name.jpg`. This allows me to use a simple combination of liquid tags in my Markdown image links like so:
 
 ~~~ md
-![Image name](%20site.baseurl%20/images%20page.url%20/image-name.jpg)
+![Image name]({{ site.baseurl }}/images{{ page.url }}/image-name.jpg)
 ~~~
+{% endraw %}
 
 GitHub does have a notional limit on repositories of 1GB, so at some point I’ll probably have to host my images elsewhere, but for now it’s a good solution.
 
