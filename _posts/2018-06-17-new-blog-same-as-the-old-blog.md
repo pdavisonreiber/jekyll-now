@@ -32,7 +32,7 @@ I wanted a way of building and managing my site which was compatible with using 
 
 What I tried first was a little crazy. I would edit my source files on my iPad, push them up to GitHub, pull them back down onto my Raspberry Pi, which I controlled via my iPad using either SSH (using [Termius][15]) or VNC (using [Screens][16]). Then I would run Jekyll on the Pi, start a local web server on my network, and view the pages on my iPad. But as any programmer will tell you, it’s really important that the cycle of change the code, run the code, look at the output, change the code needs to be as fast and efficient as possible. This method was definitely not that. For one, the Pi was slow to build the site each time: it was often taking up to 30 seconds. Having to push to GitHub for every single tiny change is also not exactly how you’re meant to use it[^17].
 
-I thought I would give it a go on the Mac instead, and this turned out to be a very good decision. As someone who would have considered themselves to have “moved on” from the Mac to live the iOS-only lifestyle, I have to give credit where credit’s due: it was the perfect tool for the job. My wife has an old mid-2012 MacBook Air with a battery so dead that it instantly turns off if the power is disconnected[^18], but after a recent reformatting and installation of High Sierra, it’s running pretty well. I installed [Xcode][19], [GitHub Desktop][20], and Ruby via [RVM][21] on the command line. Once you’ve got Ruby set up you can install Jekyll using these instructions. A tip if you are using GitHub Pages is to run the the command `gem install github-pages`. This installs all of the plugins that are compatible with GitHub Pages, and allows you to see your site exactly how it will appear on the web. 
+I thought I would give it a go on the Mac instead, and this turned out to be a very good decision. As someone who would have considered themselves to have moved on from the Mac to live the iOS-only lifestyle, I have to give credit where credit’s due: it was the perfect tool for the job. My wife has an old mid-2012 MacBook Air with a battery so dead that it instantly turns off if the power is disconnected[^18], but after a recent reformatting and installation of High Sierra, it’s running pretty well. I installed [Xcode][19], [GitHub Desktop][20], and Ruby via [RVM][21] on the command line. Once you’ve got Ruby set up you can install Jekyll using these instructions. A tip if you are using GitHub Pages is to run the the command `gem install github-pages`. This installs all of the plugins that are compatible with GitHub Pages, and allows you to see your site exactly how it will appear on the web. 
 
 So why is the Mac so good at the job of building and testing a Jekyll site? For one thing, you are working with a **lot** of windows at once. I had several Xcode windows open with various Markdown, HTML, and CSS files that I was working on, I had the terminal open to run Jekyll and the local web server, I had Safari open to preview the site and to read documentation, and I had GitHub Desktop open to keep track of changes and push them to my site. The combination of autosave in Xcode, plus Jekyll automatically regenerating the local site whenever it detected changes to the source files, plus the web server continuously running, meant I could tweak something in a file, wait a few short seconds for Jekyll to rebuild, refresh Safari and view my changes, all on the same machine. It made things _so_ much quicker. It really did give me a renewed appreciation for the Mac and the things it is really good at.
 
@@ -48,42 +48,38 @@ Because I was running my Jekyll blog on GitHub Pages, I was somewhat constrained
 With the Archive page, what I wanted was a list of year and month headings, most recent at the top, with links to each of the posts under their respective headings. I did’t want to include months were there weren’t any posts, and I didn’t want to repeat months with more than one post. Here’s the code I used:
 
 {% raw %}
-~~~ html
+```
 {% for post in site.posts %}
-		
-	{% assign current_post_year = post.date | date: "%Y" %}
 
-	{% assign next_post_year = post.next.date | date: "%Y" %}
-	
-	{% assign current_post_month = post.date | date: "%B" %}
-
-	{% assign next_post_month = post.next.date | date: "%B" %}
+    {% assign current_post_year = post.date | date: "%Y" %}
+    {% assign next_post_year = post.next.date | date: "%Y" %
+    {% assign current_post_month = post.date | date: "%B" %}
+    {% assign next_post_month = post.next.date | date: "%B" %}
+    {% assign date_id = post.date | date: "%Y-%m" %}
     
-   {% assign date_id = post.date | date: "%Y-%m" %}
-	
-	{% if post.next == nil %}
-		<h1>{{ current_post_year }}</h1>
-   	<h2 id="{{ date_id }}">{{ current_post_month }}</h2>
-	{% elsif next_post_year != current_post_year %}
-		<h1>{{ current_post_year }}</h1>
-		<h2 id="{{ date_id }}">{{ current_post_month }}</h2>
-	{% elsif next_post_month != current_post_month %}
-		<h2 id="{{ date_id }}">{{ current_post_month }}</h2>
-	{% endif %}
+    {% if post.next == nil %}
+        <h1>{{ current_post_year }}</h1>
+        <h2 id="{{ date_id }}">{{ current_post_month }}</h2>
+    {% elsif next_post_year != current_post_year %}
+        <h1>{{ current_post_year }}</h1>
+        <h2 id="{{ date_id }}">{{ current_post_month }}</h2>
+    {% elsif next_post_month != current_post_month %}
+        <h2 id="{{ date_id }}">{{ current_post_month }}</h2>
+    {% endif %}
 
-	<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
+    <p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
 		
 {% endfor %}
-~~~
+```
 {% endraw %}
 
-Basically, I print the post’s year and month, unless they are the same as the next post chronologically (which is further up the page). I also added `id` attributes to the months to act as HTML anchors. Then I made the date stamp on each post a link to `{{ site.baseurl }}/archive#{{ page.date | date: "%Y-%m" }}`, so that the user can click on the date stamp and be taken straight to the right section of the Archive page. You can try it by clicking the date stamp at the top of this post or by [clicking here][24].
+Basically, I print the post’s year and month, unless they are the same as the next post chronologically (which is further up the page). I also added `id` attributes to the months to act as HTML anchors. Then I made the date stamp on each post a link to {% raw %}`{{ site.baseurl }}/archive#{{ page.date | date: "%Y-%m" }}`{% endraw %}, so that the user can click on the date stamp and be taken straight to the right section of the Archive page. You can try it by clicking the date stamp at the top of this post or by [clicking here][24].
 
 ### Tags Page
 I used a similar trick with my [Tags page][25], which collates all the different tags I have assigned to posts. It’s built using the following code:
 
 {% raw %}
-~~~ html
+```
 {% assign all_tags = site.posts | map: "tags" | uniq | sort_natural %}
 <div class="posts">
 {% for tag in all_tags %}
@@ -93,21 +89,21 @@ I used a similar trick with my [Tags page][25], which collates all the different
     {% endfor %}
 {% endfor %}
 </div>
-~~~
+```
 {% endraw %}
 
 The first line really shows the power of Liquid as a functional language: it fetches all the posts, gets a list of their tags, removes duplicates, and sorts them into alphabetical order. Then I just loop over the tags, printing each heading – again with an `id` attribute – along with links to all of the pages that have that tag. At the end of each post, I then have the following code:
 
 {% raw %}
-~~~ html
+```
 {% for tag in page.tags %}
-	{% if forloop.last %}
-		<a href="{{ site.baseurl }}/tags#{{ tag }}" class="meta">{{ tag }}</a>
-	{% else %}
-		<a href="{{ site.baseurl }}/tags#{{ tag }}" class="meta">{{ tag }}</a>,
-	{% endif %}
+    {% if forloop.last %}
+        <a href="{{ site.baseurl }}/tags#{{ tag }}" class="meta">{{ tag }}</a>
+    {% else %}
+        <a href="{{ site.baseurl }}/tags#{{ tag }}" class="meta">{{ tag }}</a>,
+    {% endif %}
 {% endfor %}
-~~~
+```
 {% endraw %}
 
 This lists the tags on the post (the last without a comma) and links them to the appropriate anchor on the Tags page. [Here’s an example][26] of a link to the tag for Notes on my Tags page.
@@ -118,34 +114,35 @@ Compared to the plugins which can do things like generate individual pages for e
 I wanted my site to natively support link posts. I added a custom field to my post front matter called `titlelink:`, and then used the following code to turn the title into a link and add a visual indicator when there was text in this field:
 
 {% raw %}
-~~~ html
+```
 {% if page.titlelink %}
-	<a href="{{ page.titlelink }}"><h1 class="entry-title">{{ page.title }} ↪︎</h1></a>
+    <a href="{{ page.titlelink }}"><h1 class="entry-title">{{ page.title }} ↪︎</h1></a>
 {% else %}
-  <h1 class="entry-title">{{ page.title }}</h1>
+    <h1 class="entry-title">{{ page.title }}</h1>
 {% endif %}
-~~~
+```
 {% endraw %}
 
 ### Popover Footnotes
 Jekyll supports footnotes out of the box, but I wanted to implement inline, popover style footnotes like this one. There’s a JavaScript plugin called [Bigfoot][27] that can do this, so I created a `js` directory in my repository and put the `bigfoot.min.js` file in there. It wasn’t initially clear to me, but it turned out that I also had to have jQuery in there as well for it to work. I then put the following code into the `default.hmtl` template in my `_layouts` directory:
 
 {% raw %}
-~~~ html
+```
 <script type="text/javascript" src="{{ site.baseurl }}/js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/bigfoot.min.js"></script>
-    <script type="text/javascript">
-      $.bigfoot();
-    </script>
-~~~
+<script type="text/javascript" src="{{ site.baseurl }}/js/bigfoot.min.js"></script>
+<script type="text/javascript">
+    $.bigfoot();
+</script>
+```
 {% endraw %}
 
 ### Images Directory
 I configured my posts’ permalinks to be of the form `https://polymaths.blog[/linked]/yyyy/mm/slugified-title`, and so to make it easy to reference images inside a post, I set up the directory structure within my images folder to match this. FN So for example, if the URL of the post ends with `/2018/06/post-title` then the path of an image for that post would be `/images/2018/06/post-title/image-name.jpg`. This allows me to use a simple combination of liquid tags in my Markdown image links like so:
 
-~~~ md
+{% raw %}
+```
 ![Image name]({{ site.baseurl }}/images{{ page.url }}/image-name.jpg)
-~~~
+```
 {% endraw %}
 
 GitHub does have a notional limit on repositories of 1GB, so at some point I’ll probably have to host my images elsewhere, but for now it’s a good solution.
