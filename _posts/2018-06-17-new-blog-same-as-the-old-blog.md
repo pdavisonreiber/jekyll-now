@@ -4,7 +4,7 @@ title: New Blog, Same as the Old Blog
 slug: new-blog-same-as-the-old-blog
 category: 
 titlelink: 
-tags: []
+tags: [Jekyll, Liquid, Working Copy, GitHub, GitHub Pages, Raspberry Pi, Termius, Screens]
 ---
 
 To feel a real sense of ownership, sometimes you need to put something together yourself. And that’s what I recently decided to do with this blog. When I started writing here, I had things I wanted to share, and I needed a simple and straightforward way to share them. [Wordpress.com][1] was a great place to start: it let me get a domain name, customise how my site looked, and quickly get started on writing and publishing in Markdown, without having to worry about things like hosting.
