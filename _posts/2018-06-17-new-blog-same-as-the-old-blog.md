@@ -151,7 +151,7 @@ GitHub does have a notional limit on repositories of 1GB, so at some point I’l
 
 Rebuilding my blog with [Jekyll][28] has been great fun and I’ve learned a lot. It’s let me get to grips with some of the basics of web programming, which is something I’d like to develop further in the future. Along the way I’ve used some great tools, from my intrepid little Raspberry Pi, to my old but reliable MacBook Air, to the incredible [Working Copy][29] app for iOS.
 
-Here’s to new and improved PolyMaths. Now to get writing!
+Here’s to the new and improved PolyMaths. Now to get writing!
 
 [1]: https://wordpress.com
 [2]: https://wordpress.com/pricing/
