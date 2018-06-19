@@ -7,7 +7,7 @@ titlelink: https://twitter.com/fraserspeirs/status/1007500668784054272
 tags: [BYOD]
 ---
 
-[A great series of tweets from Fraser Speirs](https://twitter.com/fraserspeirs/status/1007500668784054272), who ran the first one-to-one school iPad programme in the world.
+[A great series of tweets from Fraser Speirs](https://twitter.com/fraserspeirs/status/1007500668784054272), who ran the first one-to-one school iPad programme in the world:
 
 > It's now entirely clear to me that BYOD is a failed idea in K-12 EdTech. A complete evolutionary dead-end.
 
