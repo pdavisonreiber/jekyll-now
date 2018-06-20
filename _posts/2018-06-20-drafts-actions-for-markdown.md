@@ -38,10 +38,11 @@ What I’ve done more recently is to create a new, and similar, [footnotes actio
 
 Drafts 5 also allows you to set custom keyboard shortcuts for actions, so I currently have ⌘K for inline link, ⌘⇧K for reference links, and ⌘⇧⌥K for footnotes. It makes writing in Markdown feel completely frictionless.
 
-If you like writing in Markdown, I hope you find these actions useful. You can find them [here][3] and [here][4] in the Action Directory.
+If you like writing in Markdown, I hope you find these actions useful. You can find them [here][3] and [here][4] in the [Action Directory][5].
 
 [1]: https://daringfireball.net/projects/markdown/syntax#link
 [2]: https://itunes.apple.com/gb/app/drafts-5-capture-act/id1236254471?mt=8&uo=4&at=1001lsF2
 [3]: https://actions.getdrafts.com/a/1L4
 [4]: https://actions.getdrafts.com/a/1L5
+[5]: https://actions.getdrafts.com
 [^5]: Like so
