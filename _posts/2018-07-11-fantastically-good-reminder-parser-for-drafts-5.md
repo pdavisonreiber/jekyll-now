@@ -9,7 +9,7 @@ tags: [Drafts, Reminders]
 
 Following my recent blog post about my [Fantastically Good Event Parser][1], which to my great delight was [featured on MacStories][2], I received quite a few requests to create something similar for Reminders. [Fantastical][3], which inspired the event parser, also allows you to create reminders in the system Reminders app [using natural language][4]. The interface within the app that allows you to enter calendar events also allows you to create reminders by including words like `reminder`, `task`, or `todo` in the text entered. 
 
-I thought about replicating this functionality within my previous action, but this didn’t feel quite right in Drafts. Adding calendar events and setting a reminder are conceptually quite different kinds of action, so I decided to build a separate action just for reminders. Being separate, I also decided that requiring a key word like `reminder` or `todo` didn’t make much sense for this use case, so I’m diverging from the traditional Fantastical functionality slightly here.
+I thought about replicating this functionality within my previous action, but this didn’t feel quite right in Drafts. Adding calendar events and setting a reminder are conceptually quite different kinds of action, so I decided to build a separate action just for reminders. Being separate, I also decided that requiring a keyword like `reminder` or `todo` didn’t make much sense for this use case, so I’m diverging slightly from the traditional Fantastical functionality here.
 
 Otherwise, it works very similarly to Fantastical. Reminders can be entered in the form `Thing Tuesday 5pm !!! /p` to add a reminder called _Thing_ with a due date of Tuesday, with a reminder at 5pm that day, with high priority, and stored in my _Personal_ reminders list. Here are some details on how the parsing works:
 - The name of the reminder is whatever is left when the date, time, priority, and list name are removed. [^5]
@@ -25,7 +25,7 @@ You can find my [Fantastically Good Reminder Parser][13] in the [Action Director
 [2]: https://www.macstories.net/linked/fantastically-good-event-parser-for-drafts-5/
 [3]: https://itunes.apple.com/gb/app/fantastical-2-for-iphone/id718043190?mt=8&uo=4&at=1001lsF2
 [4]: https://flexibits.com/fantastical/help/adding-events-and-reminders
-[^5]: Note that I’ve decided not to automatically remove words like `due` or `by`, so if you include these they will be added to the name of the reminder. I’d suggest just omitting them.
+[^5]: Note that I’ve decided not to automatically remove words like `due` or `by`, so if you include these they will be added to the name of the reminder. I’d suggest omitting them.
 [^6]: If there’s anyone who would like the parser to interpret dates given in the standard British format of dd/mm/yyyy, you can change the `US` at the beginning of the third script step to `GB`.
 [7]: https://twitter.com/agiletortoise/
 [8]: https://itunes.apple.com/gb/app/drafts-5-capture-act/id1236254471?mt=8&uo=4&at=1001lsF2
