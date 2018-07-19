@@ -13,7 +13,7 @@ I thought about replicating this functionality within my previous action, but th
 
 Otherwise, it works very similarly to Fantastical. Reminders can be entered in the form `Thing Tuesday 5pm !!! /p` to add a reminder called _Thing_ with a due date of Tuesday, with a reminder at 5pm that day, with high priority, and stored in my _Personal_ reminders list. Here are some details on how the parsing works:
 - The name of the reminder is whatever is left when the date, time, priority, and list name are removed. [^5]
-- The date and time can be entered in pretty much any normal format. Again, I’m using chrono.js behind the scenes here. Dates without times will default to having an alert at noon. (The reminders app does not allow due dates to be set without an alert at some time on the same day.) [^6]
+- The date and time can be entered in pretty much any normal format. Again, I’m using chrono.js behind the scenes here. Dates without times will default to having an alert at noon.[^6]
 - Priority is optional and can be set as `!`, `!!`, or `!!!`.
 - The reminder list is set using a forward slash followed by one or more letters from the beginning of the name of the list. If a matching list is not found, or if no list is specified, the reminder will go into the system default reminders list. 
 
@@ -26,7 +26,7 @@ You can find my [Fantastically Good Reminder Parser][13] in the [Action Director
 [3]: https://itunes.apple.com/gb/app/fantastical-2-for-iphone/id718043190?mt=8&uo=4&at=1001lsF2
 [4]: https://flexibits.com/fantastical/help/adding-events-and-reminders
 [^5]: Note that I’ve decided not to automatically remove words like `due` or `by`, so if you include these they will be added to the name of the reminder. I’d suggest omitting them.
-[^6]: If there’s anyone who would like the parser to interpret dates given in the standard British format of dd/mm/yyyy, you can change the `US` at the beginning of the third script step to `GB`.
+[^6]: The default alarm time can be changed by [tweaking the script](https://twitter.com/pdavisonreiber/status/1017704853991297027). If there’s anyone who would like the parser to interpret dates given in the standard British format of dd/mm/yyyy, you can also change the `US` at the beginning of the third script step to `GB`.
 [7]: https://twitter.com/agiletortoise/
 [8]: https://itunes.apple.com/gb/app/drafts-5-capture-act/id1236254471?mt=8&uo=4&at=1001lsF2
 [9]: http://reference.getdrafts.com/objects/ReminderList.html
