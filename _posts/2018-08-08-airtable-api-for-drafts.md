@@ -25,7 +25,7 @@ User-built integrations are already perfectly possible to create, and in fact a 
 
 I wanted to try to make something like this myself, and my Airtable API is the result. Using the ideas about Object Oriented Programming that I’ve been learning about recently, I’ve created a set of classes and methods for interacting with a base in Airtable. This is very much beta software, so I am sure there are bugs, and I am sure that people will suggest additional features that would improve it. One thing I would like to add in the near future is file uploads and downloads.
 
-[Here’s a link to the script][17] in the Action Directory, and [here’s a link to the script in GitHub][18]. To use this, include an "Include Action" action step before your own script. [Here's a template action][22] you can use. You will also need to find out your base's endpoint and API key from the [Airtable API documentation][21].
+**[Here’s a link to the script][17]** in the Action Directory, and **[here’s a link to the script in GitHub][18]**. To use this, include an "Include Action" action step before your own script. [Here's a template action][22] you can use. You will also need to find out your base's endpoint and API key from the [Airtable API documentation][21].
 
 ![Airtable API documentation]({{ site.baseurl }}/images{{ page.url }}/airtable-documentation.jpeg)
 
