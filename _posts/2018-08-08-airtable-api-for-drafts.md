@@ -98,6 +98,8 @@ Represents a table within an Airtable base.
 ### Functions
 - **addRecord(ATRecord)**
 	- Add a new record to the table. Will not be pushed to the web until `update()` is called.
+- **selectRecords(field, options)**
+	-  Equivalent to `ATRecord.selectRecords(table.records, field, options)`.
 - **update()** -> _boolean_
 	- Push changes to the base. Returns `true` if successful. 
 
