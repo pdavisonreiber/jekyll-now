@@ -8,14 +8,6 @@ _PolyMaths uses Amazon affiliate links. You can help support the site by purchas
 
 ## Current Recommendation
 
-![AmazonBasics Backpack]({{ site.baseurl }}/images/recommendations/backpack.jpeg)
-
-### [AmazonBasics Backpack](https://amzn.to/2LWktGP) [🇺🇸$30](https://amzn.to/2LWktGP) [🇬🇧£30](https://amzn.to/2OL5Un6)
-
-Avoid the analysis paralysis of trying to find the perfect backpack, and just buy this $30 one from the AmazonBasics range. It has lots of pockets for all your gear, and it's pretty rugged and hard-wearing. It covers a lot of use cases: I use it to carry my iPad and books back and forth to school each day, but I've also used it for    camping and travelling. It can fit a surprisingly large amount of stuff if you need it to: I managed to pack everything I needed for a week long trip to the States in just this bag, with no checked bag!
-
-## Previous Recommendations
-
 ![AUKEY 20,000mAh Power Bank]({{ site.baseurl }}/images/recommendations/battery.jpeg)
 
 ### [AUKEY 20,000mAh Power Bank](https://amzn.to/2Kxggnl) [🇺🇸$40](https://amzn.to/2Kxggnl) [🇬🇧£40](https://amzn.to/2Kwo20O)
@@ -27,6 +19,14 @@ It has three USB-A outputs, and one USB-C output. The USB-C is great for chargin
 The size is good for its capacity: it's a little under 8" by 4". I don't notice it in my backpack, but it's certainly not something you're going to one to carry in a pocket.
 
 The only feature it lacks that I would ideally have liked is compatibility with the USB-C Power Delivery spec. This is the fast charging spec supported by the iPhone 8, 8 Plus, and X. But with a portable charger, the amount of time it takes to charge is not really that important because you can charge your device while carrying it. There are power banks out there that support this kind of fast charging, but for me there would have been too many trade-offs in terms of flexibility and size.
+
+## Previous Recommendations
+
+![AmazonBasics Backpack]({{ site.baseurl }}/images/recommendations/backpack.jpeg)
+
+### [AmazonBasics Backpack](https://amzn.to/2LWktGP) [🇺🇸$30](https://amzn.to/2LWktGP) [🇬🇧£30](https://amzn.to/2OL5Un6)
+
+Avoid the analysis paralysis of trying to find the perfect backpack, and just buy this $30 one from the AmazonBasics range. It has lots of pockets for all your gear, and it's pretty rugged and hard-wearing. It covers a lot of use cases: I use it to carry my iPad and books back and forth to school each day, but I've also used it for    camping and travelling. It can fit a surprisingly large amount of stuff if you need it to: I managed to pack everything I needed for a week long trip to the States in just this bag, with no checked bag!
 
 ![Anker USB-C 5-Port 60W Wall Charger ($48)]({{ site.baseurl }}/images/recommendations/wall-charger.jpeg)
 
