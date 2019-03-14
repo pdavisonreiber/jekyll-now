@@ -4,7 +4,7 @@ title: Siri Shortcuts and Transport APIs
 slug: siri-shortcuts-and-transport-apis
 category: 
 titlelink: 
-tags: [Web API, Shortcuts, Siri]
+tags: [Web APIs, Shortcuts, Siri, Jayson]
 ---
 
 I haven’t written anything about [Shortcuts][1] since it was released last September, so I thought it was about time I share a few of the shortcuts I’ve had fun making recently and which I’m finding myself using almost every day. All of them leverage the advantages that came with the transition from Workflow, in particular the ability to both trigger them from Siri, and for Siri to natively respond with the output of the shortcut using the `show results` action.
