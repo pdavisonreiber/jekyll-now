@@ -7,7 +7,7 @@ titlelink:
 tags: [Grader+, Swift]
 ---
 
-Today I’m very excited to announce the release of my first ever iOS app, Grader+. It’s a simple utility app, primarily designed for teachers marking tests and exams. It’s available on the App Store now as a free download, with a $0.99 in-app purchase to unlock the premium features.
+Today I’m very excited to announce the release of my first ever iOS app, [Grader+][13]. It’s a simple utility app, primarily designed for teachers marking tests and exams. It’s available on the App Store now as a free download, with a $0.99 in-app purchase to unlock the premium features.
 
 My motivation for creating it was twofold. Firstly, it’s an app that I wanted to exist so I could use it myself. The way I mark, I go through tests question by question, writing the number of marks for each question on the paper. At the end, I then need to add up the marks for each student to work out their total mark and then record it. Grader+ is designed to help with the adding up and recording part of that. Now you might think – as a maths teacher – that I would be good at adding up, but in practice I would frequently lose count and have to start again, especially when I had to stop and re-mark something I had missed along the way. Other options include using a calculator, and just pressing the plus button every time, but that doesn’t solve the recording problem; or recording individual marks directly into a spreadsheet, a technique that can be useful if you want to analyse the breakdown of marks question by question, but is also time-consuming and difficult to do on the go. What I wanted was a way to record an individual mark with a single tap, and then save each mark quickly and easily. That core functionality was the inspiration of this app, and then the other features grew from there.
 
@@ -43,7 +43,7 @@ In particular, I would not have been able to have figured out in-app purchases w
 
 ---
 
-I hope you enjoy using the app. It’s available now on the App Store, and if you want to support its development, and the development of future apps, please do unlock the premium features and throw a dollar (or a pound) my way.
+I hope you enjoy using the app. [It’s available now on the App Store][13], and if you want to support its development, and the development of future apps, please do unlock the premium features and throw a dollar (or a pound) my way.
 
 
 [^1]: Requires a maximum score to be entered in Settings
@@ -58,3 +58,4 @@ I hope you enjoy using the app. It’s available now on the App Store, and if yo
 [10]: https://www.swiftbysundell.com
 [11]: https://stackoverflow.com
 [12]: https://www.raywenderlich.com/5456-in-app-purchase-tutorial-getting-started
+[13]: https://itunes.apple.com/gb/app/grader/id1448038088?mt=8
