@@ -18,6 +18,7 @@ It’s one of the simplest script actions I’ve made, but also one that I now u
 
 [1]: https://itunes.apple.com/gb/app/drafts-capture-act/id1236254471?mt=8&uo=4
 [^2]: Five minutes for me.
-[^3]: The action only works if you don’t edit the blank draft first.
+[^3]: The action only works if you don’t edit the blank draft first. For a longer list of recent drafts, there’s a combination of built in keyboard shortcuts you can use. Just hit ⌘\ then use the right arrow key to select _Recent Drafts_, up and down arrow keys to navigate between them, and return to open the one you want.
+
 [^4]: Drafts does offer a “focus mode” to prevent this from happening, so this action is just for when I forget to turn it on.
 [5]: https://actions.getdrafts.com/a/1Wc
