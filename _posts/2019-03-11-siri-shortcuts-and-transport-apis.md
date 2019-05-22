@@ -17,7 +17,11 @@ The first one I built to allow Siri to tell me the status of the tube line I liv
 
 ![JSON Shortcut, JSON in rich notification, JSON in Jayson]({{ site.baseurl }}/images{{ page.url }}/shortcuts-and-jayson.png)
 
-Running this shortcut with the URL [`https://api.tfl.gov.uk/Line/Mode/tube`][6] returns eleven JSON objects, each corresponding to one of the tube lines in London. For example, here is the raw JSON returned for the Bakerloo Line:
+Running this shortcut with the URL
+```
+https://api.tfl.gov.uk/Line/Mode/tube
+```
+returns eleven JSON objects, each corresponding to one of the tube lines in London. For example, here is the raw JSON returned for the Bakerloo Line:
 ```json
 {
   "$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities",
@@ -47,7 +51,11 @@ Running this shortcut with the URL [`https://api.tfl.gov.uk/Line/Mode/tube`][6] 
   ]
 }
 ```
-Since I want to check the status of a particular line, the part I need here is the `id` key. Now I can query the URL [`https://api.tfl.gov.uk/Line/bakerloo/Status`][7], which returns the following JSON data:
+Since I want to check the status of a particular line, the part I need here is the `id` key. Now I can query the URL
+```
+https://api.tfl.gov.uk/Line/bakerloo/Status
+```
+which returns the following JSON data:
 ```json
 [
   {
@@ -96,7 +104,15 @@ To get the human-readable status, I need to take the value from the `lineStatuse
 
 ## Arrivals Information
 
-This isn’t the case on most of the London Underground network, but on the route I take to and from work, the trains are actually relatively infrequent. I have a ten minute walk from my work to the nearest station, and so ideally I want to time things so that I arrive a minute or two before my train arrives. I wanted to build a shortcut that would allow Siri to tell me how long it is until my train arrives. To do this, I used the URL endpoint [`https://api.tfl.gov.uk/StopPoint/{id}/Arrivals`][9], with the id of the station near my work. I first had to find out what this id was, so I used the endpoint [`https://api.tfl.gov.uk/Line/{line id}/StopPoints`][10] to list all of the stations, along with their ids, on a given line. This is a case where [Jayson][3] really comes into its own. When you open some JSON data in the app, you can use the key button in the top right to display the value for a given key for each element of an array. So using the previous URL with the id for the Bakerloo line, and opening the data in Jayson, I can use the key button to display the values for the key `commonName`. This makes it much easier to find the station I want, and then drill down to identify its id.
+This isn’t the case on most of the London Underground network, but on the route I take to and from work, the trains are actually relatively infrequent. I have a ten minute walk from my work to the nearest station, and so ideally I want to time things so that I arrive a minute or two before my train arrives. I wanted to build a shortcut that would allow Siri to tell me how long it is until my train arrives. To do this, I used the URL endpoint
+```
+https://api.tfl.gov.uk/StopPoint/{id}/Arrivals
+```
+with the id of the station near my work. I first had to find out what this id was, so I used the endpoint
+```
+https://api.tfl.gov.uk/Line/{line id}/StopPoints
+``` 
+to list all of the stations, along with their ids, on a given line. This is a case where [Jayson][3] really comes into its own. When you open some JSON data in the app, you can use the key button in the top right to display the value for a given key for each element of an array. So using the previous URL with the id for the Bakerloo line, and opening the data in Jayson, I can use the key button to display the values for the key `commonName`. This makes it much easier to find the station I want, and then drill down to identify its id.
 
 ![Jayson key tool]({{ site.baseurl }}/images{{ page.url }}/jayson-keys.png)
 
@@ -120,11 +136,7 @@ Building these shortcuts was a lot of fun, and was made much easier by the wonde
 [3]: https://itunes.apple.com/gb/app/jayson/id1447750768?mt=8&uo=4
 [4]: https://www.macstories.net/reviews/inspecting-json-files-on-ios-with-jayson/#shortcuts-and-rich-notifications
 [^5]: In the API documentation, it says, “To use the Unified API, developers should register for an Application ID and Key. Append the app_id and app_key query parameters to your requests.” In practice I’ve found this isn’t necessary for the very low volume of requests I’ve been making.
-[6]: https://api.tfl.gov.uk/Line/Mode/tube
-[7]: https://api.tfl.gov.uk/Line/bakerloo/Status
 [^8]: One of the reasons I haven’t is that the Shortcuts app still doesn’t offer an `else if` option in conditional blocks, necessitating awkward nested blocks as a workaround.
-[9]: https://api.tfl.gov.uk/StopPoint/940GZZLUMTC/Arrivals
-[10]: https://api.tfl.gov.uk/Line/bakerloo/Status
 [^11]: In my version of this shortcut, I put in the line status shortcut at the end with a _Run Shortcut_ action, so that Siri also tells me about any disruptions after telling me about when my train is.
 [12]: https://www.icloud.com/shortcuts/a8f32ff67efc402380ed505817d3c5cc
 [13]: https://www.icloud.com/shortcuts/eb47afd2e3144eaeb8d5398b1ee6970d
