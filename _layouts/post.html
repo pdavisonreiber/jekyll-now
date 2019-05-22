@@ -10,7 +10,7 @@ layout: default
   <h1 class="entry-title">{{ page.title }}</h1>
   {% endif %}
   
-  <a href="{{ site.baseurl }}/archive#{{ page.date | date: "%Y-%m" }}"><span class="meta">{{ page.date | date: "%Y-%m-%d" }}</span></a><a href="{{ site.baseurl }}{{ post.url }}"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta"><span class="meta">✪Permalink</span></a>
+  <a href="{{ site.baseurl }}/archive#{{ page.date | date: "%Y-%m" }}"><span class="meta">{{ page.date | date: "%Y-%m-%d" }}</span></a><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="{{ site.baseurl }}{{ post.url }}"><span class="meta">✪Permalink</span></a>
   
   <div class="entry">
     {{ content }}
