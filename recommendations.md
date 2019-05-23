@@ -4,9 +4,9 @@ title:
 permalink: /recommendations/
 ---
 
-_PolyMaths uses Amazon affiliate links. You can help support the site by purchasing items via these links. If you're not from the US, please click on the relevant flag for your country._
+_UPDATE (May 2019): PolyMaths no longer uses Amazon affiliate links, but feel free to browse previous recommendations below._
 
-## Current Recommendation
+## Previous Recommendations
 
 ![AUKEY 20,000mAh Power Bank]({{ site.baseurl }}/images/recommendations/battery.jpeg)
 
@@ -19,8 +19,6 @@ It has three USB-A outputs, and one USB-C output. The USB-C is great for chargin
 The size is good for its capacity: it's a little under 8" by 4". I don't notice it in my backpack, but it's certainly not something you're going to one to carry in a pocket.
 
 The only feature it lacks that I would ideally have liked is compatibility with the USB-C Power Delivery spec. This is the fast charging spec supported by the iPhone 8, 8 Plus, and X. But with a portable charger, the amount of time it takes to charge is not really that important because you can charge your device while carrying it. There are power banks out there that support this kind of fast charging, but for me there would have been too many trade-offs in terms of flexibility and size.
-
-## Previous Recommendations
 
 ![AmazonBasics Backpack]({{ site.baseurl }}/images/recommendations/backpack.jpeg)
 
