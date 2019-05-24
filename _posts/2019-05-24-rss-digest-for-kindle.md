@@ -15,7 +15,7 @@ There were a couple of interesting challenges building this shortcut. One was de
 
 The other challenge was a feature I decided to add while writing this post. On iOS my current RSS reader of choice is [Unread][2]. It’s an app I’ve always liked because it just gets all the usual UI elements out of the way and lets you read uninterrupted, and the controls to the app are a rather elegant selection of gestures. But I’ve been playing around with [Fiery Feeds][3] recently because it allows feed subscriptions to be added within the app. Using Unread means I have to deal with the [Feedly website][4], which is not great and downright impossible to use on an iPhone. Fiery Feeds and several other apps allow you to export OPML, so I wanted to offer support for that as a convenient way to use this shortcut with your existing feeds. I cobbled together some regex which seems to do the job. [^1]
 
-I had a half working version of this shortcut that also included articles that were linked to from link posts, but hit a brick wall in making that work in a satisfactory way. Different blogs just don’t seem to be consistent in the way they indicate which posts are link posts and what the linked URL is. If anyone has any ideas how to make this work, [let me know][5].
+I had a half-working version of this shortcut that also included articles that were linked to from link posts, but hit a brick wall in making that work in a satisfactory way. Different blogs just don’t seem to be consistent in the way they indicate which posts are link posts and what the linked URL is. If anyone has any ideas how to make this work, [let me know][5].
 
 You can download the shortcut with [this link][6].
 
