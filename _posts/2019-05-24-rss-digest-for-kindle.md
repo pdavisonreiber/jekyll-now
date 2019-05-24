@@ -19,7 +19,7 @@ I had a half working version of this shortcut that also included articles that w
 
 You can download the shortcut with [this link][6].
 
-[^1]: I wish the JavaScript action step in the Shortcuts App allowed you to use it outside of a webpage, in which case I’m sure there would be a more elegant way to parse that information.
+[^1]: I wish the JavaScript action step in the Shortcuts App could be used outside of a webpage, in which case I’m sure there would be a more elegant way to parse that information.
 [2]: https://itunes.apple.com/gb/app/unread-rss-reader/id1252376153?mt=8&uo=4
 [3]: https://itunes.apple.com/gb/app/fiery-feeds-rss-reader/id1158763303?mt=8&uo=4
 [4]: https://feedly.com/i/welcome
