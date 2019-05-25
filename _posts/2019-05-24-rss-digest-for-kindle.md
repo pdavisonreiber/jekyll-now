@@ -2,6 +2,7 @@
 layout: post
 title: RSS Digest for Kindle
 slug: rss-digest-for-kindle
+date: 2019-05-24 09:46:25 +0100
 category: 
 titlelink: 
 tags: [Kindle, RSS]
