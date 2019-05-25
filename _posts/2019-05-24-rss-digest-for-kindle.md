@@ -25,4 +25,4 @@ You can download the shortcut with [this link][6].
 [3]: https://itunes.apple.com/gb/app/fiery-feeds-rss-reader/id1158763303?mt=8&uo=4
 [4]: https://feedly.com/i/welcome
 [5]: https://mobile.twitter.com/pdavisonreiber
-[6]: https://www.icloud.com/shortcuts/e20cab9dc28b49708ce698920795f40f
+[6]: https://www.icloud.com/shortcuts/ee382a64ef6d420db3c9dbf925aaed8b
