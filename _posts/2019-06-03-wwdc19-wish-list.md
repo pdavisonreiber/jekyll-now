@@ -26,6 +26,7 @@ I recently built my [first ever app][3], and I did it using Xcode on an old MacB
 - Better Files app.
 - Widgets on the home screen.
 - Shared folders in iCloud Drive.
+
 ---
 
 Ten years in, it’s time for iOS to fully mature into a self-sufficient computing platform. I’m looking forward to seeing how Apple moves towards that goal.
