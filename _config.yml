@@ -1,6 +1,6 @@
 name: PolyMaths
 description: by Peter Davison-Reiber
-avatar: https://github.com/pdavisonreiber/pdavisonreiber.github.io/raw/master/images/avatar.jpg
+avatar: https://github.com/pdavisonreiber/polymaths/raw/master/images/avatar.jpg
 
 # Includes an icon in the footer for each username you enter
 footer-links:
@@ -16,7 +16,7 @@ footer-links:
 # SEO
 title: PolyMaths
 author: Peter Davison-Reiber
-logo: https://github.com/pdavisonreiber/pdavisonreiber.github.io/raw/master/images/avatar.jpg
+logo: https://github.com/pdavisonreiber/polymaths/raw/master/images/avatar.jpg
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-120517609-1
