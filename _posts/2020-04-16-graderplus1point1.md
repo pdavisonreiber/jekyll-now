@@ -1,4 +1,4 @@
-—--
+---
 layout: post
 title: Grader+ 1.1
 slug: graderplus1point1
@@ -6,7 +6,7 @@ date: 2020-04-16 16:48:34 +0100
 category: linked
 titlelink: https://apps.apple.com/gb/app/grader/id1448038088
 tags: [Grader+, Swift, SwiftUI]
-—--
+---
 
 I’m pleased today to announce the release of version 1.1 of [Grader+](https://apps.apple.com/gb/app/grader/id1448038088). I’ve rewritten the app from the ground up using [SwiftUI](https://developer.apple.com/xcode/swiftui/), Apple’s new declarative UI framework. This was partly so that I could learn how to use it, and partly so that the app would be easier to maintain in the future. I was _just about_ able to put the app together using UIKit for version 1.0, but it was a struggle at times. SwiftUI made that so much better, and has given me confidence about maintaining it and building more apps in the future. 
 
