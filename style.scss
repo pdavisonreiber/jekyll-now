@@ -75,7 +75,8 @@ p {
 
 a {
   color: $blue;
-	cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
   &:hover, &:active {
     color: $blue;
   }
