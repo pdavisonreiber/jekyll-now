@@ -227,6 +227,7 @@ nav {
   margin-top: 23px;
   font-family: $helveticaNeue;
   font-size: 18px;
+  font-weight: bold;
 
 
   @include mobile {
@@ -284,6 +285,10 @@ nav {
     border-left: 2px solid $red;
     padding: 0 1em;
     color: $gray;
+  }
+  
+  a {
+    text-decoration: underline;
   }
 
   .comments {
