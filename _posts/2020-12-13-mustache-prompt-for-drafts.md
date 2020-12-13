@@ -23,7 +23,7 @@ Furthermore[^4], you can also adjust date values by a given number of days, week
 
 The first time you declare a date, you have to use the `date:` annotation, but after that there’s no need. 
 
-Mustache Prompt also supports arrays of strings, though there is no need to annotate here. If you use the `{% endraw %}{{#tag}}{% endraw %}` Mustache syntax, which can accept arrays, they will automatically be detected. In a text box, you just need to enter the values separated by commas.
+Mustache Prompt also supports arrays of strings, though there is no need to annotate here. If you use the `{% endraw %}{{\#tag}}{% endraw %}` Mustache syntax, which can accept arrays, they will automatically be detected. In a text box, you just need to enter the values separated by commas.
 
 Perhaps the best way to see how this all works is to [download the action][5] and then run it on this text:
 
