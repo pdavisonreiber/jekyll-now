@@ -6,9 +6,8 @@ date: 2020-12-13 12:28:00 +0000
 category: 
 titlelink: 
 tags: [Drafts, Mustache]
-render_with_liquid: false
-
 ---
+{% raw %}
 
 Today I am releasing two new [Drafts][1] actions. Originally, I had planned for these to be just one action, but as I was working on my script, I realised that part of the functionality I was building could be useful in its own right, and could easily be carved out into its own action. 
 
@@ -56,3 +55,5 @@ And just wait till you see the second action I’ve build with this.
 [3]: https://en.wikipedia.org/wiki/Mustache_%28template_system%29
 [^4]: It’ll make more sense why I’ve added this when you see the next action I’ve created.
 [5]: https://actions.getdrafts.com/a/1fT
+
+{% endraw %}
