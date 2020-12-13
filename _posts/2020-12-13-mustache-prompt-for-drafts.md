@@ -42,10 +42,10 @@ Perhaps the best way to see how this all works is to [download the action][5] an
 > Here is a paragraph that is repeated for each item in the array comma_separated_strings. The current item is {{.}}.
 > {{/comma_separated_strings}}
 > 
-> Here is a date: {{date:date_variable}}.
-> Here is the same date three days later: {{date_variable+3d}}
-> Here is the same date one week ago: {{date_variable-1w}}
-> Here is the same date in seven months’ time: {{date_variable+7m}}
+> Here is a date: {{date:date_variable}}.\
+> Here is the same date three days later: {{date_variable+3d}}\
+> Here is the same date one week ago: {{date_variable-1w}}\
+> Here is the same date in seven months’ time: {{date_variable+7m}}\
 > Here is another date that is offset without the original date being shown: {{date:another_date+3w}}
 
 And just wait till you see the second action I’ve build with this.
