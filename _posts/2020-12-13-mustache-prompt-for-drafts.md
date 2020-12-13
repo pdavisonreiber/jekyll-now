@@ -14,7 +14,7 @@ Today I am releasing two new [Drafts][1] actions. Originally, I had planned for 
 
 Mustache Prompt allows you to create Mustache templates in Drafts, and then instantiate those templates to create new drafts with the data you want. It does this by automatically detecting the variables in your template, and then prompting you to enter those values. Once you’ve entered the values, a new draft will be created with the values you entered. It’s a lot like a TextExpander fill-in snippet.
 
-I’ve also extended the Mustache syntax to allow for variable type annotations, including dates and booleans. This ties into the prompt functionality within Drafts, so that if you annotate a data variable using the syntax `\{\{date:variable_name\}\}`, you will get a date picker in the prompt rather than a text field. Similarly, you can write `{{bool:variable_name}}` to get a toggle switch.
+I’ve also extended the Mustache syntax to allow for variable type annotations, including dates and booleans. This ties into the prompt functionality within Drafts, so that if you annotate a data variable using the syntax `{% raw %}{{date:variable_name}}{% endraw %}`, you will get a date picker in the prompt rather than a text field. Similarly, you can write `{{bool:variable_name}}` to get a toggle switch.
 
 Furthermore[^4], you can also adjust date values by a given number of days, weeks, or months. Here are some examples of how to use that syntax:
 - `{{date_variable+2d}}` adds two days to the date
