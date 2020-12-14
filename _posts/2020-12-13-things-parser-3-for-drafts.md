@@ -49,9 +49,9 @@ Things Parser 3 supports almost all the attributes that that Things own [`json` 
 - Or more than one @tags(tag1, tag2, tag3)
 
 - Tasks can have notes
-	which are intended text
+	which are indented text
 - And subtasks
-	- which are intended tasks
+	- which are indented tasks
 	- like this
 ```
 
